@@ -34,3 +34,7 @@ To calculate the price per acre, you may have to create a custom function.
 ## Resources
 - https://docs.python.org/3/howto/sorting.html
 - https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
+
+## Final Note
+
+To take the challenge, just fork this repo, commit your file(s) to your copy of the repo, and send me what you have whenever you finish.
