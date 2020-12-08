@@ -31,8 +31,11 @@ It may be a good idea to represent the list of plots as a _list of dictionaries_
 
 To calculate the price per acre, you may have to create a custom function.
 
+You can just print your sorted lists to the console. Also, when you do print your lists, could you be sure that there is a dictionary property that contains the price per acre?
+
 ## Resources
 - https://docs.python.org/3/howto/sorting.html
+- https://www.tutorialspoint.com/ways-to-sort-list-of-dictionaries-using-values-in-python
 - https://docs.python.org/3/library/stdtypes.html#mapping-types-dict
 
 ## Final Note
