@@ -1,4 +1,4 @@
-# Land Work - A Python Challenge
+# Land Work - Beginner Python Student Challenge
 
 Here's your assignment. Let's say that you have a client who is looking to buy some land in Arizona. They'd like to spend no more than $20,000 and they want the plot to be at least 1 acre.
 
