@@ -70,7 +70,7 @@ azLots = [
      "state": "AZ",
      "zipcode": "86434",
      "asking price": "$19947",
-     "acreage": "86434"
+     "acreage": "43.19"
      },
     {"address": "2045 E Calle Copala",
      "city": "Kingman",
@@ -87,11 +87,20 @@ azLots = [
      "acreage": "40.34"
      },
 ]
-print(sorted(azLots, key=lambda item: item['acreage'])) # Its smallest to largest, tried to get the reverse=true but
-# it wasnt working for me. Also how do I get them i true list format, like in columns instead of rows??? comment here
+print(sorted(azLots, key=lambda item: item['acreage'], reverse=True)) # Its smallest to largest, tried to get the reverse=true but
+# it wasnt working for me.
+#
+# I didn't captialize the T in True. smh thanks for that: learned something
+#
+#
+# Also how do I get them i true list format, like in columns instead of rows??? comment here
 # to lemme know //azLots.sort(reverse=true) ... print(azLots) gave me a nameerror // is it because i put a dict in a
-# list?? comment here to put me on. https://www.w3schools.com/python/trypython.asp?filename=demo_ref_list_sort5 was a
-# reference but brain a lil fried right now. be back later
+# list?? comment here to put me on. https://www.w3schools.com/python/trypython.asp?filename=demo_ref_list_sort5
+#
+#
+#
+#Tried this print("column format : " + xAddress + xCity + xZipcode + float(xAsking) + float(xAcreage)) but gotta type error.
+# right side of console got the variables as a dict.
 
 print(sorted(azLots, key=lambda item: item['asking price']))
 
