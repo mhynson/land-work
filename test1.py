@@ -87,22 +87,17 @@ azLots = [
      "acreage": "40.34"
      },
 ]
-print(sorted(azLots, key=lambda item: item['acreage'], reverse=True)) # Its smallest to largest, tried to get the reverse=true but
-# it wasnt working for me.
-#
-# I didn't captialize the T in True. smh thanks for that: learned something
-#
-#
-# Also how do I get them i true list format, like in columns instead of rows??? comment here
-# to lemme know //azLots.sort(reverse=true) ... print(azLots) gave me a nameerror // is it because i put a dict in a
-# list?? comment here to put me on. https://www.w3schools.com/python/trypython.asp?filename=demo_ref_list_sort5
-#
-#
-#
-#Tried this print("column format : " + xAddress + xCity + xZipcode + float(xAsking) + float(xAcreage)) but gotta type error.
-# right side of console got the variables as a dict.
+sortedListByAcres = sorted(azLots, key=lambda item: item['acreage'], reverse=True)
 
-print(sorted(azLots, key=lambda item: item['asking price']))
+# Via Mike's recommendation the sorted lists have been dropped into variables
+#
+#
+# makes it easier to use the for loop for the list with variables
+for item in sortedListByAcres:
+  print(item)
+
+
+print(sortedListByAcres)
 
 # to create a custom function that would get the price per acre, i'd have to divide the asking price by the acres.
 # from the list itself. azLots('asking price'/ 'acreage') = Typeerror: unsupported operand type for /: 'str' and
