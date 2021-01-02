@@ -1,13 +1,3 @@
-# Client wants a list of 10 plots in the Arizona area That include street address, city, state, zipcode asking
-#  price and the number of acres
-# Sort the list in 2 dif ways: Largest to smallest plot, cheapest to most expensive
-# todo: Determine avg price per acre
-# Represent lis of plots as list_of_dictionaries // Used azLots
-# Todo: To calculate the price per acre, create custom function
-# Print sorted lists to the console, DONE
-# Todo: Dictionary that contains price per acre
-
-
 azLots = [
     {"address": "5905 Red Moon Trl",
      "city": "Williams",
@@ -99,6 +89,27 @@ for item in sortedListByAcres:
 
 print(sortedListByAcres)
 
+# todo: Determine avg price per acre
+# Todo: To calculate the price per acre, create custom function
+# Todo: Utilize int() /float() in custom function
+# Todo: Dictionary that contains price per acre
+# testing function for acreage in azLots:
+#     print(int('acreage')) in console
+# Result: got whole list instead of the actual acreage BOTTOM LINE: Failed
+# going to try azLots(int('asking price') / float('acreage') in console
+# result: Typeerror: List object is not callable, tried different variations
+# Testing for asking in azLots:
+# ...     print() in different variations: feels like im getting closer. (semantic errors right? lol been reading a lil)
+# after watchin lesson 5 videos for the 1000th time finally was able to come up with this :
+#     def price_per_acre(asking_price, acreage):
+#     """
+#
+#     :type acreage: float
+#     """
+#     int(asking_price)
+#     "/"
+#     = price_per_acre
+#     Ima retreat for now but feels like i made some progress
 # to create a custom function that would get the price per acre, i'd have to divide the asking price by the acres.
 # from the list itself. azLots('asking price'/ 'acreage') = Typeerror: unsupported operand type for /: 'str' and
 # 'str'. now how do i turn the string to a numeral??
