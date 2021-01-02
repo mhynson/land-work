@@ -94,7 +94,7 @@ sortedListByAcres = sorted(azLots, key=lambda item: item['acreage'], reverse=Tru
 #
 # makes it easier to use the for loop for the list with variables
 for item in sortedListByAcres:
-  print(item)
+    print(item)
 
 
 print(sortedListByAcres)
